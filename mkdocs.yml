@@ -1,0 +1,40 @@
+site_name: ZeroDiff
+pages:
+- Home: index.md
+- Design:
+    - User Empathy: design/empathy.md
+    - First Principles: design/essential_user_task.md
+    - Make Fewer Things: design/fewer.md
+    - Teach, Don't Lead: design/teach.md
+    - What's Testable?: design/testable.md
+    - Ethnographic Study: design/ethno_study.md
+    - Design Sprint: design/sprint.md
+- Hardware:
+    - Top-Level Object Dev: hardware/top_level.md
+    - PCB/A:
+        - PCB/A Dev: hardware/pcba.md
+        - Release CheckList: hardware/pcb_checklist.md
+    - MechE: 
+        - MechE Dev: hardware/mech_eng.md
+        - Release CheckList: hardware/meche_checklist.md
+        - Test Criteria: hardware/mech_eng_test.md
+        - Process Improvement: hardware/process_improvement.md
+    - Firmware:
+        - Firmware Dev: firmware/dev.md
+        - Release Checklist: firmware/checklist.md
+    - Vendors:
+        - Trust as a Tool: vendor/trust.md
+        - Assembly, Fab Notes: vendor/fab.md
+        - ECOs - Yes, No, Maybe: vendor/eco.md
+- Test:
+    - Automated Monkey Tests: test/monkey.md
+- Glossary: glossary.md
+- About:
+    - Why ZeroDiff?: why.md
+    - Contribute: contribute.md
+    - License: license.md
+theme: mkdocs
+markdown_extensions: [tables]
+repo_url: https://github.com/0x6a77/zerodiff/
+google_analytics: ['UA-78164923-1', 'mkdocs.org']
+copyright: <a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2016 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License
