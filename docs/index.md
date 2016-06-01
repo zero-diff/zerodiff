@@ -1,4 +1,7 @@
-# ZeroDiff 
+# ZeroDiff
+
+![Screenshot](img/kw2.module.jpg)
+
 ### A New Way to Design and Develop Products
 
 ### A Simple Philosophy
