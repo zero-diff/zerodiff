@@ -110,19 +110,19 @@
     
         
     <url>
-     <loc>None/why/</loc>
+     <loc>None/about/why/</loc>
      <lastmod>2016-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/contribute/</loc>
+     <loc>None/about/contribute/</loc>
      <lastmod>2016-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/license/</loc>
+     <loc>None/about/license/</loc>
      <lastmod>2016-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
