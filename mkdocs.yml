@@ -30,9 +30,9 @@ pages:
     - Automated Monkey Tests: test/monkey.md
 - Glossary: glossary.md
 - About:
-    - Why ZeroDiff?: why.md
-    - Contribute: contribute.md
-    - License: license.md
+    - Why ZeroDiff?: about/why.md
+    - Contribute: about/contribute.md
+    - License: about/license.md
 theme: mkdocs
 markdown_extensions: [tables]
 repo_url: https://github.com/0x6a77/zerodiff/

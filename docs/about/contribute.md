@@ -32,4 +32,9 @@ This will generate a static documentation site in the directory ~/git/zerodiff/s
 
 Now from your browser go to the URL: <a href="http://http://127.0.0.1:8000">http://127.0.0.1:8000</a>
 
-## Commit the Static Site to Github Project Pages ("ghpages")
+## Commit the Static Site to Github Project Pages ("gh-pages")
+
+        >cd ~/git/zerodiff
+        >mkdocs gh-deploy --clean
+
+This command will generate the static site and push it to the gh-pages branch so that it shows up as a searchable, shred website (on github). The url will be <a href="https://your_github_id.github.io/zerodiff/">https://your_github_id.github.io/zerodiff/</a>.
