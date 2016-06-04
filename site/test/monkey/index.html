@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Automated Monkey Tests - ZeroDiff</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-78164923-1', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">ZeroDiff</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../design/empathy/">User Empathy</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/essential_user_task/">First Principles</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/fewer/">Make Fewer Things</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/teach/">Teach, Don't Lead</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/testable/">What's Testable?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/ethno_study/">Ethnographic Study</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/sprint/">Design Sprint</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../hardware/top_level/">Top-Level Object Dev</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">PCB/A</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../hardware/pcba/">PCB/A Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../hardware/pcb_checklist/">Release CheckList</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">MechE</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../hardware/mech_eng/">MechE Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../hardware/meche_checklist/">Release CheckList</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../hardware/mech_eng_test/">Test Criteria</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../hardware/process_improvement/">Process Improvement</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Firmware</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../firmware/dev/">Firmware Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../firmware/checklist/">Release Checklist</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Vendors</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../vendor/trust/">Trust as a Tool</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../vendor/fab/">Assembly, Fab Notes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../vendor/eco/">ECOs - Yes, No, Maybe</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Automated Monkey Tests</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../glossary/">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../about/why/">Why ZeroDiff?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/contribute/">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../../vendor/eco/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../glossary/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/0x6a77/zerodiff/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#automated-monkey-testing-amt">Automated Monkey Testing (AMT)</a></li>
+        
+            <li><a href="#even-your-first-design-iteration-should-be-testable">Even your first design iteration should be testable</a></li>
+        
+            <li><a href="#test-criteria-fall-into-four-broad-categories">Test criteria fall into four broad categories:</a></li>
+        
+    
+        <li class="main "><a href="#steps-to-get-to-amt">Steps to get to AMT</a></li>
+        
+            <li><a href="#burn-inmanufacture-jigs">Burn-in/Manufacture Jigs</a></li>
+        
+            <li><a href="#test-harness-and-test-points">Test Harness and Test Points</a></li>
+        
+            <li><a href="#scripted-development-environment">Scripted Development Environment</a></li>
+        
+            <li><a href="#report-bugs-as-unit-tests">Report Bugs as Unit Tests</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="automated-monkey-testing-amt">Automated Monkey Testing (AMT)</h2>
+<p>A continuous and complete simulation of user interactions against a design. You run automated monkey tests against each commit using the continuous integration (CI) system. </p>
+<p>The alternative, perhaps most common way to accomplish this kind of testing, is human-scripted testing. </p>
+<p><strong>Don't do that!</strong> </p>
+<p>Human-driven, scripted testing is mindless and <em>boooring</em>, and the more someone runs them, the more numb they become. This is a recipe for tests that hardly ever get run, and when they do get run, the effort is generally perfunctory and sloppy.</p>
+<h3 id="even-your-first-design-iteration-should-be-testable">Even your first design iteration should be testable</h3>
+<blockquote>
+<p>When you engage in <strong>any</strong> design, you must start with the question: "what's testable about this design?"</p>
+</blockquote>
+<p>The right way to test is automation: continuous integration, unit and end-to-end tests. You'll never get to automated testing unless the tests are part of the design process. A side benefit of doing this in the design process is that when you send a revision to mass production, your vendor partners have a way to validate their work as part of the QA/acceptance testing. (You, really, really, really don't want to race around trying to create some kind of manufacturing acceptance test just before manufacture because it will force you to redesign the PCB and that will take almost as much work as the original development!)</p>
+<h3 id="test-criteria-fall-into-four-broad-categories">Test criteria fall into four broad categories:</h3>
+<h4 id="usability">Usability</h4>
+<p>The whole reason to follow the ZeroDiff process is to rapidly iterate on your design assumptions. The design stories that flow out of the sprints should represent the base criteria that validates if the design meets user need. As soon as a prototype emerges from the shop, the test team needs to validate the prototype against these stories.</p>
+<h4 id="survivability">Survivability</h4>
+<p>One problem with the "works-like/looks-like" development model is there is no way to know how difficult it will be to design a production version that can survive contact with users. Breaking the production process into two phases like this will take more total development hours, and it creates a lot of uncertainty about how long it will actually take to get to market.</p>
+<h4 id="manufacturability">Manufacturability</h4>
+<p>Each time the prototype team produces a design iteration, they should perform a design-for-manufacture (DMF) review. Each iteration is a chance for the production team to inform the design team of ways to improve costs, simplicity, reliability and quality. One nice thing about the ZeroDiff process is that small changes like this are easy to digest, so the two teams can make a lot of progress without conflict.</p>
+<h4 id="reliability">Reliability</h4>
+<p>Probably the most unnerving part of hardware development are transient field failures. E.g. glitches, reboots, freezes, bricking or random weirdness in the user experience. The best way to defend against transient failures is to force the combined firmware and hardware through automated testing for every commit.</p>
+<h2 id="steps-to-get-to-amt">Steps to get to AMT</h2>
+<h3 id="burn-inmanufacture-jigs">Burn-in/Manufacture Jigs</h3>
+<p>Probably the easiest way to start down the road to AMT is to start with a test/flash jig for any new design. Resist the temptation to simply place a JTAG/SWD header on the PCB that fits your programming pod. It will be difficult for an outside vendor partner to reach any meaningful scale if they require access to a programming pod on the manufacturing floor. Even if you don't have the ability to fabricate a jig now, the presence of the flash/debug bus as test points means you can more easily automate this for production later without having to redesign the board. Whether the device ever reaches scaled production or not, it costs almost nothing to add this capability in the beginning.</p>
+<h3 id="test-harness-and-test-points">Test Harness and Test Points</h3>
+<p>Closely related to burn-in jigs are test points. Any I/O, button, switch, sensor or communication bus should have a corresponding test point (pad) accessible somewhere on the PCB. These should all be on the same side, probably on what would be the "bottom" if the device has a strong user-facing side. The test harness can use pogo-pins to reach these test points. Even if you don't have the capability to fabricate a test harness/jig, adding these test points now allows you easily incorporate a test harness later without having to redesign the board.</p>
+<p>Eventually you want these test points to drive automated tests that simulate user behaviors to test on-board subsystems like communications or sensor readings. The same automated, scripted tests you use in AMT work for manufacturing validation and QA. The assembly line worker should be able to push the completed device into a harness and press a button that flashes the device and runs a validation battery that results in a go/no-go indication for the assembly worker.</p>
+<h3 id="scripted-development-environment">Scripted Development Environment</h3>
+<p>Almost all firmware development toolchains now support scripted development. Embrace this early and integrate it into a continuous integration tool like TeamCity. This is not hard to do, and the benefits are enormous. Once the scripted testing is in place, your development team has a convenient place to hang firmware unit tests. Scripted testing is also a good place to hang automated monkey tests. Once you have even one of these automated tests, it's much easier for the team to add subsequent tests.</p>
+<h3 id="report-bugs-as-unit-tests">Report Bugs as Unit Tests</h3>
+<p>A good QA and development team is able to express bugs as unit or E2E tests that fail. Having a place to add these tests to automated testing means that you can get coverage against regressions or closely related failures.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p><a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2016 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Glossary - ZeroDiff</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-78164923-1', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">ZeroDiff</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../design/empathy/">User Empathy</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../design/essential_user_task/">First Principles</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../design/fewer/">Make Fewer Things</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../design/teach/">Teach, Don't Lead</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../design/testable/">What's Testable?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../design/ethno_study/">Ethnographic Study</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../design/sprint/">Design Sprint</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../hardware/top_level/">Top-Level Object Dev</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">PCB/A</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../hardware/pcba/">PCB/A Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="../hardware/pcb_checklist/">Release CheckList</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">MechE</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../hardware/mech_eng/">MechE Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="../hardware/meche_checklist/">Release CheckList</a>
+</li>
+
+        
+            
+<li >
+    <a href="../hardware/mech_eng_test/">Test Criteria</a>
+</li>
+
+        
+            
+<li >
+    <a href="../hardware/process_improvement/">Process Improvement</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Firmware</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../firmware/dev/">Firmware Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="../firmware/checklist/">Release Checklist</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Vendors</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../vendor/trust/">Trust as a Tool</a>
+</li>
+
+        
+            
+<li >
+    <a href="../vendor/fab/">Assembly, Fab Notes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../vendor/eco/">ECOs - Yes, No, Maybe</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../test/monkey/">Automated Monkey Tests</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../about/why/">Why ZeroDiff?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../about/contribute/">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../about/license/">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../test/monkey/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../about/why/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/0x6a77/zerodiff/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#glossary">Glossary</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="glossary">Glossary</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw Material</td>
+<td>Any 3rd party item that we purchase and store unaltered.</td>
+<td>LED strips</td>
+</tr>
+<tr>
+<td>Value Add</td>
+<td>A manufacture step or process where Codeshelf modifies one or more raw materials into a WIP or finished good.</td>
+<td>Cut holes in NEMA enclosures</td>
+</tr>
+<tr>
+<td>Work In Process (WIP)</td>
+<td>Raw materials (or other WIP) that have been through a value-add step.</td>
+<td>NEMA enclosures with holes cut in them</td>
+</tr>
+<tr>
+<td>Finished Good</td>
+<td>A complete item ready for installation or sale.</td>
+<td>Aisle Controller</td>
+</tr>
+<tr>
+<td>Kitting</td>
+<td>Combining raw material and WIP into a kit to send to a value add step or to a customer.</td>
+<td>A box of parts to make one or more CHEs</td>
+</tr>
+<tr>
+<td>Gerber File</td>
+<td>A machine file used to generate PCB copper layers.</td>
+<td></td>
+</tr>
+<tr>
+<td>Excellon (Drill) File</td>
+<td>A machine file used to generate PCB vias and holes.</td>
+<td></td>
+</tr>
+<tr>
+<td>Centroid File</td>
+<td>A machine file used to show the centers of ICs placed on a PCB by a pick-and-place machine</td>
+<td></td>
+</tr>
+<tr>
+<td>Bill of Materials</td>
+<td>A list of component parts needed in a kit to build a WIP or finished good part.</td>
+<td>Components needed to build a particular PCBA.</td>
+</tr>
+<tr>
+<td>PCB Stackup</td>
+<td>The number of copper and fiberglass layers, the copper weights, solder mask type/color and silkscreen color.</td>
+<td></td>
+</tr>
+<tr>
+<td>PCB Fabrication File</td>
+<td>Instructions on how to manufacture PCB files. Includes notes, UL data, clarifications, revisions, etc.</td>
+<td></td>
+</tr>
+<tr>
+<td>Assembly File (Assy)</td>
+<td>Complete assembly instructions for a WIP or finished good item.  LED tube assembly instructions</td>
+<td></td>
+</tr>
+<tr>
+<td>Flash/Test Jig</td>
+<td>A device used to optionally flash and then test a WIP or finished good item during manufacture.</td>
+<td></td>
+</tr>
+<tr>
+<td>Release</td>
+<td>An official release of a design from engineering to production for manufacture.</td>
+<td></td>
+</tr>
+<tr>
+<td>Revision/Version    A</td>
+<td>named, tracked change to a previous release.</td>
+<td></td>
+</tr>
+<tr>
+<td>Engineering Change Order</td>
+<td>A document that details all of the changes between two revisions or versions.  It should reference the revision numbers and the changes made between each release.  The CMS is not allowed to make any changes to this package, including vendor or part substitutions, without first looping back to Codeshelf with an ECO.</td>
+<td></td>
+</tr>
+<tr>
+<td>Engineering Change Request</td>
+<td>An ECR is initiated by a CMS to suggest a change to a released device. The ECR initiates a process of discussion within the organization to determine the impact of a change and the best possible solution, potentially resulting in an ECO.</td>
+<td></td>
+</tr>
+<tr>
+<td>Release Package</td>
+<td>A set of immutable documents that specify how to manufacture and test a particular version of a WIP or finished good item.</td>
+<td></td>
+</tr>
+<tr>
+<td>Git</td>
+<td>A revision system for tracking document versions through time</td>
+<td></td>
+</tr>
+<tr>
+<td>Git commit</td>
+<td>A specific document version committed to git for tracking and sharing.</td>
+<td></td>
+</tr>
+<tr>
+<td>Git tag</td>
+<td>A named tag associated with any git commit.</td>
+<td></td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Design or production engineer</td>
+<td></td>
+</tr>
+<tr>
+<td>HWTE</td>
+<td>Hardware Test Engineer</td>
+<td></td>
+</tr>
+<tr>
+<td>ProdMgr</td>
+<td>Production Manager</td>
+<td></td>
+</tr>
+<tr>
+<td>Assembly File</td>
+<td>This is a Word document with images that explains how to do any special assembly to and item.</td>
+<td></td>
+</tr>
+<tr>
+<td>PCBAs</td>
+<td>Most of our boards can get built entirely in the pick-and-place robots, but if there is some unusual hand-assembly step, etc. then we need to include an assembly file to let the 3rd party manufacturers know how to do these steps.</td>
+<td></td>
+</tr>
+<tr>
+<td>Mechanicals</td>
+<td>Many of our housings are currently assembled in house, but for larger manufacturing runs we need to include an assembly file to let the 3rd party manufacturers know how to assemble the items. For mechanical releases this file may be a step-by-step instruction manual with images and text describing the assembly process.</td>
+<td></td>
+</tr>
+<tr>
+<td>Test File</td>
+<td>This is a Word document file that explains how to flash (optional) and test a WIP or finished goods item during manufacture.  This document is critical because it indicates our quality acceptance criteria from the manufacturer before they ship the part.  Any flaws found after delivery are expensive to resolve and may cost us instead of the 3rd party.</td>
+<td></td>
+</tr>
+<tr>
+<td>DXF or EPS Output file</td>
+<td>Autodesk format vector file - allows transmission of 2d build data to computer aided laser or water cutting.</td>
+<td></td>
+</tr>
+<tr>
+<td>Stereolithography File (STL)</td>
+<td>STL files describe only the surface geometry of a three-dimensional object without any representation of color, texture or other common CAD model attributes. The STL format specifies both ASCII and binary representations. It is widely used for rapid prototyping and computer-aided manufacturing.</td>
+<td></td>
+</tr>
+<tr>
+<td>SLDPRT, STEP and/or IGES File</td>
+<td>The native format used by Solidworks to represent 3D geometry. STEP and IGES are portable file formats that are commonly used to represent this same geometry for the purpose of transmitting 3D design intent to a vendor. STEP is a better format than IGES and is preferred by most vendors. Best practices include sending both SLDPRT and STEP (or IGES) files in case the vendor is using a different version of Solidworks—which is not backward-forward compatible.</td>
+<td></td>
+</tr>
+<tr>
+<td>PDF Drawing File</td>
+<td>Essentially a Fabrication file for the mechanicals, containing all dimensions, tolerances, material requirements, etc. for the build.  This is the document a vendor will use to QA a built item.  It is also our assurance of recourse for any incorrect items we may receive.</td>
+<td></td>
+</tr>
+<tr>
+<td>AMT</td>
+<td>Automated Monkey Testing - The equivalent of TDD/CI for software - usually run in a fixed jig directly from firmware commits.</td>
+<td></td>
+</tr>
+<tr>
+<td>Prototype</td>
+<td>Items made internally or externally that are not official production designs. These are not repeatable - they will never be re-made. Prototypes are internal engineering and test development only.</td>
+<td></td>
+</tr>
+<tr>
+<td>First Article</td>
+<td>Goods made to test whether the entire release and manufacturing process is sound. These items should be considered completely production-ready. These releases include submitting a Purchase Order to an external vendor.</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p><a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2016 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
