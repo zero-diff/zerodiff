@@ -8,8 +8,6 @@ Undeterred, we pressed on. Version 2 took almost six more months! The product wa
 
 Over the course of a year we formalized this process into a set of internal processes and documentation we called ZeroDiff. Through these process improvements we were able to complete production-ready hardware design revisions in as little as 48 hours. Working with local vendor/partners we were able to source all of the components to make tens of thousands of sophisticated radio control systems entirely in our downtown Oakland office. 
 
-At our peak we had 24 employees, and our system automated order selection for major brands, but in 2016 our business failed (a combination of a failed strategic gamble and a patent infringement lawsuit). Though, as a testament to the quality of product we built, the system automated another few hundred thousand orders flawlessly while in zombie mode for the 50 days past the time where the company no longer had employees.
-
 ## Now to Share it
 
 We had always intended to share our ZeroDiff process, but there just never seemed to be a good way (or time) to do it. All of the company docs were trapped in Confluence, which is not a particularly great system (not forkable, and now long on tooth). I really wanted this stuff to live in github, so that the community could share and possibly grow it without a lot of inter-organization coordination. Once I found mkdocs, it seemed clear this was the right way forward.
