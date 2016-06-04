@@ -8,7 +8,7 @@
 
 ### A Simple Philosophy
 
->If you maintain zero difference between prototype and production designs, as you rapidly iterate, you can mass produce any revision.
+>If you maintain zero difference between prototype and production designs, you can mass produce any revision even when you iterate designs rapidly.
 
 ### Corollary
 
