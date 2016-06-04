@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+	<title>ZeroDiff</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-78164923-1', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">ZeroDiff</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="design/empathy/">User Empathy</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="design/essential_user_task/">First Principles</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="design/fewer/">Make Fewer Things</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="design/teach/">Teach, Don't Lead</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="design/testable/">What's Testable?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="design/ethno_study/">Ethnographic Study</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="design/sprint/">Design Sprint</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="hardware/top_level/">Top-Level Object Dev</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">PCB/A</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="hardware/pcba/">PCB/A Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="hardware/pcb_checklist/">Release CheckList</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">MechE</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="hardware/mech_eng/">MechE Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="hardware/meche_checklist/">Release CheckList</a>
+</li>
+
+        
+            
+<li >
+    <a href="hardware/mech_eng_test/">Test Criteria</a>
+</li>
+
+        
+            
+<li >
+    <a href="hardware/process_improvement/">Process Improvement</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Firmware</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="firmware/dev/">Firmware Dev</a>
+</li>
+
+        
+            
+<li >
+    <a href="firmware/checklist/">Release Checklist</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Vendors</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="vendor/trust/">Trust as a Tool</a>
+</li>
+
+        
+            
+<li >
+    <a href="vendor/fab/">Assembly, Fab Notes</a>
+</li>
+
+        
+            
+<li >
+    <a href="vendor/eco/">ECOs - Yes, No, Maybe</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Test <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="test/monkey/">Automated Monkey Tests</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary/">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="about/why/">Why ZeroDiff?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="about/contribute/">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="about/license/">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="design/empathy/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/0x6a77/zerodiff/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#zerodiff">ZeroDiff</a></li>
+        
+            <li><a href="#an-agile-process-for-hardware-design-and-development">An Agile Process for Hardware Design and Development</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#kill-the-waterfall-method-again">Kill the Waterfall Method (Again!)</a></li>
+        
+            <li><a href="#permission-based-production-is-terrible">Permission-based Production is Terrible</a></li>
+        
+            <li><a href="#the-joys-of-high-value-at-low-volume">The Joys of High-Value at Low-Volume</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="zerodiff">ZeroDiff</h1>
+<h2 id="an-agile-process-for-hardware-design-and-development">An Agile Process for Hardware Design and Development</h2>
+<p><img alt="Screenshot" src="./img/kw2.module.jpg" /></p>
+<h3 id="a-new-way-to-design-and-develop-products">A New Way to Design and Develop Products</h3>
+<h3 id="a-simple-philosophy">A Simple Philosophy</h3>
+<blockquote>
+<p>If you maintain zero difference between prototype and production designs, as you rapidly iterate, you can mass produce any revision.</p>
+</blockquote>
+<h3 id="corollary">Corollary</h3>
+<blockquote>
+<p>Always manufacture prototype and production designs on the same tooling - <strong>always</strong>.</p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>This site hosts the ZeroDiff process documentation. It captures knowledge that small teams can use to produce high-value objects at low-to-medium volumes. The process is similar to the design and development of modern software: build an MVP and then rapidly iterate design and development. Every iteration, e.g. a github commit, "goes live" with real users in order to perform value testing. This process repeats for an ever-growing user base on an ever-growing product value. The current consensus is that it takes 15 product design iterations to reach maximal user value, so if you want to estimate when your design will reach its optimal mass-production utility, then multiply your iteration cycle time by 15.</p>
+<h2 id="kill-the-waterfall-method-again">Kill the Waterfall Method (Again!)</h2>
+<h3 id="ie-crowdsource-works-likelooks-like-shenzhen">i.e. Crowdsource, Works-Like/Looks-Like, Shenzhen</h3>
+<p>Prior to the 2000s, software development followed a processed called The Waterfall Method. Product development would follow a sequence: conception, analysis, design, construction and testing. 12-18 months might pass before users saw anything, and if they wanted changes or didn't like features, it might be another 12-18 months before they would see those changes. It was pretty awful, and no good software product designer would ever want to go back to those times. Today, software developers follow a lean or agile practice that involves small, rapid iterations with continual and close user-value testing. Each iteration allows for incremental investments target toward value and user growth.</p>
+<p>So why are hard good designers stuck in the Waterfall Methodology? Set aside the debate of just how easy/cheap it is to fly to Shenzhen to engage a fab/CMS in supply chain execution, there are two major problems with this approach:</p>
+<ul>
+<li>The team is working toward a single manufactured revision given imperfect user testing - a kind of Hail Mary pass.</li>
+<li>The product users are somewhere else, so for the factory design team, user empathy is low.</li>
+</ul>
+<p>The whole point of ZeroDiff is to rapidly iterate with the users close at hand. Maybe you build ten of the first version and get them into the hands of real users. This allows the product design team to evaluate the user experience and propose design changes that show up in the next iteration with 1-2 weeks. Each successive iteration grows the product value, and potentially grows the user base. Since every revision is production-ready, the development team can select any revision for mass production. At that point, if your demand is high and you need MoQ 10K production runs then it's super simple to take your latest rev to Shenzhen. The rest of us (most of us) can continue to produce economically in low-volume close to where we live.</p>
+<h2 id="permission-based-production-is-terrible">Permission-based Production is Terrible</h2>
+<p>As small-batch production become less economically viable, product design teams find themselves in a permission-based production model where they have to convince a fab or CMS of the value of their job over other jobs. Most modern fabs will quickly design prototypes and produce samples in order to win larger business later, but they will not run those designs at low volume unless there's no other work on the line. To make things worse, the production-version designs and fab/assembly docs are generally not accessible to the product design team, making it painful and expensive to switch fabs.</p>
+<h2 id="the-joys-of-high-value-at-low-volume">The Joys of High-Value at Low-Volume</h2>
+<p>A side-effect of the ZeroDiff process is that small-batch production is something you can do economically on short development cycles and low unit volume. "Value" is a complex word, but in production we tend to boil it down to simple economics. What happens when an object's cost or sale prices is not a major component of its value? That gives us the luxury to chose the many other definitions of value. Perhaps we can choose to make things because they increase our enjoyment, or relieve the suffering of others. The possibilities are enormous and liberating!</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p><a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2016 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2016-06-04 19:23:43.582278
+-->
