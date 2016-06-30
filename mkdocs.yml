@@ -36,5 +36,5 @@ pages:
 theme: mkdocs
 markdown_extensions: [tables]
 repo_url: https://github.com/0x6a77/zerodiff/
-google_analytics: ['UA-78164923-1', 'mkdocs.org']
+google_analytics: ['UA-78164923-1', '0x6a77.github.io']
 copyright: <a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2016 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License
