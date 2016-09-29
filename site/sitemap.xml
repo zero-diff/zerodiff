@@ -4,7 +4,11 @@
     
     <url>
      <loc>None/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,6 +16,7 @@
     
         
     <url>
+<<<<<<< Updated upstream
      <loc>None/beginners/overview/</loc>
      <lastmod>2016-09-29</lastmod>
      <changefreq>daily</changefreq>
@@ -66,42 +71,70 @@
     <url>
      <loc>None/design/empathy/</loc>
      <lastmod>2016-09-29</lastmod>
+=======
+     <loc>None/design/empathy/</loc>
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/design/essential_user_task/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/design/fewer/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/design/teach/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/design/testable/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/design/ethno_study/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/design/sprint/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
@@ -111,7 +144,11 @@
         
     <url>
      <loc>None/hardware/top_level/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
@@ -145,7 +182,11 @@
         
     <url>
      <loc>None/test/monkey/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
@@ -154,7 +195,11 @@
     
     <url>
      <loc>None/glossary/</loc>
+<<<<<<< Updated upstream
      <lastmod>2016-09-29</lastmod>
+=======
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
     
@@ -162,20 +207,35 @@
     
         
     <url>
+<<<<<<< Updated upstream
      <loc>None/about/why/</loc>
      <lastmod>2016-09-29</lastmod>
+=======
+     <loc>None/why/</loc>
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
+<<<<<<< Updated upstream
      <loc>None/about/contribute/</loc>
      <lastmod>2016-09-29</lastmod>
+=======
+     <loc>None/contribute/</loc>
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
     <url>
+<<<<<<< Updated upstream
      <loc>None/about/license/</loc>
      <lastmod>2016-09-29</lastmod>
+=======
+     <loc>None/license/</loc>
+     <lastmod>2016-05-31</lastmod>
+>>>>>>> Stashed changes
      <changefreq>daily</changefreq>
     </url>
         
