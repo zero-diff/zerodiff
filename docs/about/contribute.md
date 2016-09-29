@@ -23,6 +23,7 @@ As you edit the markdown files, mkdocs automatically updates the website in real
 
 Once you've completed all of your edits, you need to generate the static site (not committed to git because "./site" is in .gitignore).
 
+        >cd ~/git/zerodiff
         >mkdocs build
 
 This will generate a static documentation site in the directory ~/git/zerodiff/site. You can validate the site by killing the "mkdocs serve" process and starting a simple Python=-based web server in that directory:

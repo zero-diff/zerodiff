@@ -1,6 +1,15 @@
 site_name: ZeroDiff
 pages:
 - Home: index.md
+- Beginners:
+    - Overivew: beginners/overview.md
+    - Kaizen/CPI: beginners/kaizen.md
+    - Design: beginners/design.md
+    - User Editable Doc Repo: beginners/user_docs.md
+    - All Designs To Github: beginners/doc_control.md
+    - EE Checklist: hardware/pcb_checklist.md
+    - Firmware Checklist: firmware/checklist.md
+    - CI Server: beginners/tdd_ci.md
 - Design:
     - User Empathy: design/empathy.md
     - First Principles: design/essential_user_task.md
