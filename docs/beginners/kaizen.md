@@ -1,5 +1,10 @@
 # Kaizen
 
+### From the "Read with a Pen" TinyLetter post.
+
+[https://tinyletter.com/zerodiff/letters/zerodiff-efficient-kaizen-read-with-a-pen](https://tinyletter.com/zerodiff/letters/zerodiff-efficient-kaizen-read-with-a-pen)
+
+
 Done right, Kaizen reduces mistakes and waste.  But what happens when process itself is the waste?  We all experience this: the application of process to reduce mistakes (and waste) sometimes ends up being worse than the mistakes the new process reduces!   To me, this is a central difficulty to "being in charge."
 
 I started my career in factory automation with a mentor who embraced lean manufacturing decades ahead of its current stylishness.  I would read anything even remotely connected to 1950s-80s Toyota Motor Company.  I read "The Machine that Changed the World" twice.  Because my natural inclination is laziness, "lean process" appeals to me deeply.  So of course I'm a sucker for Eric Ries and Steve Blank's "Lean Startup" movement.  Ditto for "The Pretotyping Manifesto."
