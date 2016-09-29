@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Make Fewer Things - ZeroDiff</title>
+	<title>CI Server - ZeroDiff</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -69,37 +69,37 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beginners <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../beginners/overview/">Overivew</a>
+    <a href="../overview/">Overivew</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../beginners/kaizen/">Kaizen/CPI</a>
+    <a href="../kaizen/">Kaizen/CPI</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../beginners/design/">Design</a>
+    <a href="../design/">Design</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../beginners/user_docs/">User Editable Doc Repo</a>
+    <a href="../user_docs/">User Editable Doc Repo</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../beginners/doc_control/">All Designs To Github</a>
+    <a href="../doc_control/">All Designs To Github</a>
 </li>
 
                         
@@ -116,8 +116,8 @@
 
                         
                             
-<li >
-    <a href="../../beginners/tdd_ci/">CI Server</a>
+<li class="active">
+    <a href="./">CI Server</a>
 </li>
 
                         
@@ -126,49 +126,49 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../empathy/">User Empathy</a>
+    <a href="../../design/empathy/">User Empathy</a>
 </li>
 
                         
                             
 <li >
-    <a href="../essential_user_task/">First Principles</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Make Fewer Things</a>
+    <a href="../../design/essential_user_task/">First Principles</a>
 </li>
 
                         
                             
 <li >
-    <a href="../teach/">Teach, Don't Lead</a>
+    <a href="../../design/fewer/">Make Fewer Things</a>
 </li>
 
                         
                             
 <li >
-    <a href="../testable/">What's Testable?</a>
+    <a href="../../design/teach/">Teach, Don't Lead</a>
 </li>
 
                         
                             
 <li >
-    <a href="../ethno_study/">Ethnographic Study</a>
+    <a href="../../design/testable/">What's Testable?</a>
 </li>
 
                         
                             
 <li >
-    <a href="../sprint/">Design Sprint</a>
+    <a href="../../design/ethno_study/">Ethnographic Study</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../design/sprint/">Design Sprint</a>
 </li>
 
                         
@@ -352,12 +352,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../essential_user_task/">
+                        <a rel="next" href="../../firmware/checklist/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../teach/">
+                        <a rel="prev" href="../../design/empathy/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -382,19 +382,35 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#make-fewer-things-that-are-more-valuable">Make fewer things that are more valuable</a></li>
+        <li class="main active"><a href="#tddci">TDD/CI</a></li>
+        
+            <li><a href="#continuous-integration">Continuous Integration</a></li>
+        
+            <li><a href="#teamcity-on-aws">TeamCity on AWS</a></li>
+        
+            <li><a href="#tdd">TDD</a></li>
+        
+            <li><a href="#end-to-end-testing">End-to-end Testing</a></li>
+        
+            <li><a href="#wait-did-you-say-no-automated-toolchain-deploy-to-hardware-jig-tests">Wait, Did You Say, "No automated toolchain-deploy to hardware jig tests?!"</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="make-fewer-things-that-are-more-valuable">Make fewer things that are more valuable</h1>
-<blockquote>
-<p>Good design is good business.</p>
-<p>Eliot Noyes</p>
-</blockquote>
-<p>A good, iterative design process will identify early which objects have "pull" and which do not. It's important to kill mediocre or bad product before it gets far into the process. Invest instead in making just a few objects that are great. The only way to learn this stuff early is to iterate rapidly and measure, measure, measure. ZeroDiff and a good design methodology allows you to run these tests quickly. It's true that some mediocre product concepts might flip to great because small design changes can have chaotic impacts on product value. As a small organization you do not have the luxury to chase these leprechauns. It's wiser to focus on the products that demonstrate excellence early in the process.</p></div>
+<h1 id="tddci">TDD/CI</h1>
+<h3 id="continuous-integration">Continuous Integration</h3>
+<p>Use TeamCity. The end. (Seriously.)</p>
+<h3 id="teamcity-on-aws">TeamCity on AWS</h3>
+<p>The cool thing about TeamCity is that it can do high-quality CI for just about everything there ever was: desktop app, native mobile, webapp, backend, firmware and yes, automated monkey tests for hardware. Even if you already use an outsource CI solution for the backend or web, you'll be much more effective if you adopt a tool like TC that can literally build just about any weird thing that's scriptable on Linux, Windows or Mac instances. Spinning up an instance of TC on AWS is nearly plug-and-play. This also allows you to set it up to spin up buiild workers as needed to deal with load.</p>
+<p><a href="https://confluence.jetbrains.com/display/TCD9/Setting+Up+TeamCity+for+Amazon+EC2">https://confluence.jetbrains.com/display/TCD9/Setting+Up+TeamCity+for+Amazon+EC2</a></p>
+<h3 id="tdd">TDD</h3>
+<p>It's hard to know what firmware, RTOS, builder platform, etc. that anyone will use for their hardware target. Our experience is largely with C/C++ and support for unit testing with CUnit is pretty good. Combined that with an IDE that supports CUnit (all the Eclipse variants) and you can have your firmware developers follow the red-green-refactor TDD process. </p>
+<h3 id="end-to-end-testing">End-to-end Testing</h3>
+<p>There's really not much point to E2E testing unless you do it on live hardware. Likely your build chain and deploy process is pretty messy and not automated to hardware. <em>THIS IS OK.</em> Your job as a beginner is to focus on user value. Just make good recipe documents for your build-deploy-test cycle. Maintain them via Kaizen like all of your processes! If your product is hit, you can always turn those good process recipes into automated monkey tests later.</p>
+<h3 id="wait-did-you-say-no-automated-toolchain-deploy-to-hardware-jig-tests">Wait, Did You Say, "No automated toolchain-deploy to hardware jig tests?!"</h3>
+<p>Yes! Invest nearly all of your time in design, user testing and ethnographic/market study. Don't invest a lot in automation (yet). If your product is so desirable that users complain about the occasional regression, then you're in good shape! If your product is perfection-on-a-stick, but undesirable, then you're sunk. (That's a clear sign you're still pre-PMF.) The first case is likely easily fixed, and it doesn't matter if you burn through a few users - the evidence says there will be tons more. In the second case, that's not easy to fix! Maybe it's even impossible to fix.</p></div>
             
         </div>
 

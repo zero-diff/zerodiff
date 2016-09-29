@@ -70,6 +70,63 @@
                 
                 
                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beginners <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../beginners/overview/">Overivew</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../beginners/kaizen/">Kaizen/CPI</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../beginners/design/">Design</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../beginners/user_docs/">User Editable Doc Repo</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../beginners/doc_control/">All Designs To Github</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../hardware/pcb_checklist/">EE Checklist</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../firmware/checklist/">Firmware Checklist</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../beginners/tdd_ci/">CI Server</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Design <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -358,7 +415,8 @@
 <p>As you edit the markdown files, mkdocs automatically updates the website in realtime so that you can review your changes.</p>
 <h2 id="generating-the-static-documentation-website">Generating the Static Documentation Website</h2>
 <p>Once you've completed all of your edits, you need to generate the static site (not committed to git because "./site" is in .gitignore).</p>
-<pre><code>    &gt;mkdocs build
+<pre><code>    &gt;cd ~/git/zerodiff
+    &gt;mkdocs build
 </code></pre>
 <p>This will generate a static documentation site in the directory ~/git/zerodiff/site. You can validate the site by killing the "mkdocs serve" process and starting a simple Python=-based web server in that directory:</p>
 <pre><code>    &gt;cd ~/git/zerodiff/site
