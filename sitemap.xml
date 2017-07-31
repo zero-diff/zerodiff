@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,96 +12,50 @@
     
         
     <url>
-     <loc>None/beginners/overview/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/beginners/overview/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/beginners/kaizen/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/beginners/kaizen/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/beginners/design/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/beginners/design/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/beginners/user_docs/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/beginners/user_docs/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/beginners/doc_control/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/beginners/doc_control/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/hardware/pcb_checklist/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/hardware/pcb_checklist/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/firmware/checklist/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/firmware/checklist/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/beginners/tdd_ci/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/design/empathy/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/design/essential_user_task/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/design/fewer/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/design/teach/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/design/testable/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/design/ethno_study/</loc>
-     <lastmod>2016-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/design/sprint/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/beginners/tdd_ci/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -110,31 +64,77 @@
     
         
     <url>
-     <loc>None/hardware/top_level/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/design/empathy/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None</loc>
+     <loc>/design/essential_user_task/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/design/fewer/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/design/teach/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/design/testable/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/design/ethno_study/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/design/sprint/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/hardware/top_level/</loc>
+     <lastmod>2017-07-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None</loc>
+     <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None</loc>
+     <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None</loc>
+     <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -144,8 +144,8 @@
     
         
     <url>
-     <loc>None/test/monkey/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/test/monkey/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -153,8 +153,8 @@
 
     
     <url>
-     <loc>None/glossary/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/glossary/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -162,20 +162,20 @@
     
         
     <url>
-     <loc>None/about/why/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/about/why/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/about/contribute/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/about/contribute/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/about/license/</loc>
-     <lastmod>2016-09-29</lastmod>
+     <loc>/about/license/</loc>
+     <lastmod>2017-07-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
