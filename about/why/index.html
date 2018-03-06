@@ -13,13 +13,14 @@
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../.././js/extra.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
         <script src="../../js/bootstrap-3.0.3.min.js"></script>
         <script src="../../js/highlight.pack.js"></script>
         <script>
@@ -28,7 +29,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-78164923-1', '0x6a77.github.io');
+            ga('create', 'UA-78164923-1', 'auto');
             ga('send', 'pageview');
         </script> 
     </head>
@@ -252,9 +253,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/0x6a77/zerodiff/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
+                        <a href="https://github.com/0x6a77/zerodiff/edit/master/docs/about/why.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -273,18 +272,18 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="why-zerodiff">Why ZeroDiff?</h1>
+<h1 id="why-zerodiff">Why ZeroDiff?<a class="headerlink" href="#why-zerodiff" title="Permanent link">&para;</a></h1>
 <p>In 2011 I started a side-project that would become my next startup: an innovative, low-power, cloud-controlled IoT device applied to e-commerce logistics and automation. Prior to 2011 I knew nothing about electrical, hardware or radio engineering. I tapped the many sites (Sparkfun, Instructables, Stack-Exchange, etc.) that explained how "makers" like me could learn to build hardware, and within 12 months I had a cloud-controlled hardware system complete enough to conduct my first pilot project. After we completed the pilot and collected all of the usability data, it was clear that "version 2" was going to be almost as much work to design/build as "version 1!"</p>
 <p>What these sites <strong>don't</strong> explain is how to build a hardware business!</p>
 <p>Undeterred, we pressed on. Version 2 took almost six more months! The product was starting to look pro and we were able to raise money to become a real company. A frustrating problem was that more people and money had almost no material impact on our ability to rapidly innovate hardware designs. We would think, "Oh, if the product could do X, then it would be awesome." We knew X wouldn't see the light of day for almost a year, and there was a growing pile of X-like feature requests. It was depressing. Right around this time, my wife asked me to clear out of the home shop so that our boys could have a big play space. That meant hauling to work a CNC mill and a bunch of tools. That same week we learned of our first opportunity to create an "add on" product to our system, but we didn't have 6-12 months to do it. The opportunity would disappear in 8-12 weeks. We went online to see if it was possible to create sophisticated SMT/SMD circuit boards on a CNC mill, and sure enough we found a tutorial for our exact mill. We hired a skilled machinist, and within two weeks we could generate a completed PCB/A in just a few days. At that time we used off-the-shelf enclosures that were expensive and ugly (to us by now). We decided to create a formal design studio and hired our design consultant to run it. He devised a system where we could build new enclosures in a CNC mill following a layer-by-layer stack-up process. This enabled us to create fairly complex, but good looking enclosures with features, like undercuts, that you normally can't create from a single, milled part. Eventually, we developed our design process further to incorporate folded steel to greatly increase our iteration and manufacture rate while bringing costs way down. The tooling we used is not expensive: likely you could recreate our entire shop for $50K, and a light-duty version of it for less than $25K.</p>
 <p>Over the course of a year we formalized this process into a set of internal processes and documentation we called ZeroDiff. Through these process improvements we were able to complete production-ready hardware design revisions in as little as 48 hours. Working with local vendor/partners we were able to source all of the components to make tens of thousands of sophisticated radio control systems entirely in our downtown Oakland office. </p>
-<h2 id="now-to-share-it">Now to Share it</h2>
+<h2 id="now-to-share-it">Now to Share it<a class="headerlink" href="#now-to-share-it" title="Permanent link">&para;</a></h2>
 <p>We had always intended to share our ZeroDiff process, but there just never seemed to be a good way (or time) to do it. All of the company docs were trapped in Confluence, which is not a particularly great system (not forkable, and now long on tooth). We really wanted this stuff to live in github, so that the community could share and possibly grow it without a lot of inter-organization coordination. Once we found mkdocs, it seemed clear this was the right way forward.</p>
-<h2 id="a-work-in-progress">A Work In Progress</h2>
+<h2 id="a-work-in-progress">A Work In Progress<a class="headerlink" href="#a-work-in-progress" title="Permanent link">&para;</a></h2>
 <p>Because we only lightly edited these documents as we extracted them, they still may have the company stink on them. They might also be incomplete, because it's just not possible to collect all the weird loose ends from our company system since it was spread across Confluence, Google Docs, Email and Jira. This is just a starting point, and we hope we all can grow this together.</p>
-<h2 id="zerodiff-is-not-for-everyone">ZeroDiff is not for Everyone</h2>
+<h2 id="zerodiff-is-not-for-everyone">ZeroDiff is not for Everyone<a class="headerlink" href="#zerodiff-is-not-for-everyone" title="Permanent link">&para;</a></h2>
 <p>We find that about 20% of the folks who hear about ZeroDiff "get it" and would like to embrace it. There's no mission to sell ZeroDiff, and we recognize there's many ways to reach the same end in product development. It's just a simple idea, and never really should be complex. There's a certain kind of product auteur nowadays who seem to do it all, and they're fascinating no matter what process they follow.</p>
-<h2 id="make-it-local-wherever-local-is">Make it Local Wherever Local is</h2>
+<h2 id="make-it-local-wherever-local-is">Make it Local Wherever Local is<a class="headerlink" href="#make-it-local-wherever-local-is" title="Permanent link">&para;</a></h2>
 <p>Finally, probably the most important part of ZeroDiff is that you can design and build a product close to the user <em>wherever they are</em>. This is the thing that excites me the most because we believe it unlocks a world where low-volume, high-value products can thrive **.</p>
 <p><br>
 <br>
@@ -297,8 +296,18 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <script src="../../js/base.js"></script>
+        <script src="../.././js/extra.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -321,7 +330,47 @@
             </div>
         </div>
     </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
+
 
     </body>
 </html>

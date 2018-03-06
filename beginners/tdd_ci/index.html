@@ -13,13 +13,14 @@
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../.././js/extra.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
         <script src="../../js/bootstrap-3.0.3.min.js"></script>
         <script src="../../js/highlight.pack.js"></script>
         <script>
@@ -28,7 +29,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-78164923-1', '0x6a77.github.io');
+            ga('create', 'UA-78164923-1', 'auto');
             ga('send', 'pageview');
         </script> 
     </head>
@@ -252,9 +253,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/0x6a77/zerodiff/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
+                        <a href="https://github.com/0x6a77/zerodiff/edit/master/docs/beginners/tdd_ci.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -274,17 +273,17 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="tddci">TDD/CI</h1>
-<h3 id="continuous-integration">Continuous Integration</h3>
+<h1 id="tddci">TDD/CI<a class="headerlink" href="#tddci" title="Permanent link">&para;</a></h1>
+<h3 id="continuous-integration">Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permanent link">&para;</a></h3>
 <p>Use TeamCity. The end. (Seriously.)</p>
-<h3 id="teamcity-on-aws">TeamCity on AWS</h3>
+<h3 id="teamcity-on-aws">TeamCity on AWS<a class="headerlink" href="#teamcity-on-aws" title="Permanent link">&para;</a></h3>
 <p>The cool thing about TeamCity is that it can do high-quality CI for just about everything there ever was: desktop app, native mobile, webapp, backend, firmware and yes, automated monkey tests for hardware. Even if you already use an outsource CI solution for the backend or web, you'll be much more effective if you adopt a tool like TC that can literally build just about any weird thing that's scriptable on Linux, Windows or Mac instances. Spinning up an instance of TC on AWS is nearly plug-and-play. This also allows you to set it up to spin up buiild workers as needed to deal with load.</p>
 <p><a href="https://confluence.jetbrains.com/display/TCD9/Setting+Up+TeamCity+for+Amazon+EC2">https://confluence.jetbrains.com/display/TCD9/Setting+Up+TeamCity+for+Amazon+EC2</a></p>
-<h3 id="tdd">TDD</h3>
+<h3 id="tdd">TDD<a class="headerlink" href="#tdd" title="Permanent link">&para;</a></h3>
 <p>It's hard to know what firmware, RTOS, builder platform, etc. that anyone will use for their hardware target. Our experience is largely with C/C++ and support for unit testing with CUnit is pretty good. Combined that with an IDE that supports CUnit (all the Eclipse variants) and you can have your firmware developers follow the red-green-refactor TDD process. </p>
-<h3 id="end-to-end-testing">End-to-end Testing</h3>
+<h3 id="end-to-end-testing">End-to-end Testing<a class="headerlink" href="#end-to-end-testing" title="Permanent link">&para;</a></h3>
 <p>There's really not much point to E2E testing unless you do it on live hardware. Likely your build chain and deploy process is pretty messy and not automated to hardware. <em>THIS IS OK.</em> Your job as a beginner is to focus on user value. Just make good recipe documents for your build-deploy-test cycle. Maintain them via Kaizen like all of your processes! If your product is hit, you can always turn those good process recipes into automated monkey tests later.</p>
-<h3 id="wait-did-you-say-no-automated-toolchain-deploy-to-hardware-jig-tests">Wait, Did You Say, "No automated toolchain-deploy to hardware jig tests?!"</h3>
+<h3 id="wait-did-you-say-no-automated-toolchain-deploy-to-hardware-jig-tests">Wait, Did You Say, "No automated toolchain-deploy to hardware jig tests?!"<a class="headerlink" href="#wait-did-you-say-no-automated-toolchain-deploy-to-hardware-jig-tests" title="Permanent link">&para;</a></h3>
 <p>Yes! Invest nearly all of your time in design, user testing and ethnographic/market study. Don't invest a lot in automation (yet). If your product is so desirable that users complain about the occasional regression, then you're in good shape! If your product is perfection-on-a-stick, but undesirable, then you're sunk. (That's a clear sign you're still pre-PMF.) The first case is likely easily fixed, and it doesn't matter if you burn through a few users - the evidence says there will be tons more. In the second case, that's not easy to fix! Maybe it's even impossible to fix.</p></div>
         </div>
 
@@ -294,8 +293,18 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <script src="../../js/base.js"></script>
+        <script src="../.././js/extra.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -318,7 +327,47 @@
             </div>
         </div>
     </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
+
 
     </body>
 </html>

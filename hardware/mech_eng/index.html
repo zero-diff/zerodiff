@@ -13,13 +13,14 @@
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../.././js/extra.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
         <script src="../../js/bootstrap-3.0.3.min.js"></script>
         <script src="../../js/highlight.pack.js"></script>
         <script>
@@ -28,7 +29,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-78164923-1', '0x6a77.github.io');
+            ga('create', 'UA-78164923-1', 'auto');
             ga('send', 'pageview');
         </script> 
     </head>
@@ -252,9 +253,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/0x6a77/zerodiff/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
+                        <a href="https://github.com/0x6a77/zerodiff/edit/master/docs/hardware/mech_eng.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -279,10 +278,10 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="step-0-kick-off-development-cycle">Step 0: Kick-off Development Cycle</h2>
+<h2 id="step-0-kick-off-development-cycle">Step 0: Kick-off Development Cycle<a class="headerlink" href="#step-0-kick-off-development-cycle" title="Permanent link">&para;</a></h2>
 <p>The kick-off is essential to inform everyone that the object is now in-flight for another development cycle.  The steps for kick-off are:</p>
 <ul>
-<li>Send an announce email to rnd@codeshelf.com</li>
+<li>Send an announce email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#110;&#100;&#64;&#99;&#111;&#100;&#101;&#115;&#104;&#101;&#108;&#102;&#46;&#99;&#111;&#109;">&#114;&#110;&#100;&#64;&#99;&#111;&#100;&#101;&#115;&#104;&#101;&#108;&#102;&#46;&#99;&#111;&#109;</a></li>
 <li>Schedule Kick-off meeting</li>
 <li>Ensure that the Current and Planned Hardware Releases page in the ZeroDiff Process Home page is accurate for the device (and any related projects or sub-assemblies) at every step of this process document. </li>
 <li>Print this page and make sure it follows the device through the development cycle.</li>
@@ -290,14 +289,14 @@
 </ul>
 <p>For information about how an object is designed, reference In Action Product Design Process. </p>
 <p>For information regarding Testing Criteria, reference Basic Hardware Testing Criteria.</p>
-<h2 id="step-1-create-design-artifacts">Step 1: Create Design Artifacts</h2>
+<h2 id="step-1-create-design-artifacts">Step 1: Create Design Artifacts<a class="headerlink" href="#step-1-create-design-artifacts" title="Permanent link">&para;</a></h2>
 <p>The first step of the design and manufacture of mechanicals is to create all of the relevant design and production artifacts (files).</p>
 <p>We are currently using Solidworks, Rhino, or Illustrator to design Mechanicals. Production documentation (drawings) is executed in Solidworks and output as PDF. Derivative CAD format files (those sent to vendors) are SLDPRT, STEP or EPS, depending on manufacturing process.</p>
 <ul>
 <li>Upload relevant Solidworks files to GrabCAD</li>
 <li>Be sure that the Solidworks files stay synced to GrabCAD in order to preserve change history</li>
 </ul>
-<h2 id="step-2-create-a-prototype-designer-protomgr">Step 2: Create a Prototype (Designer, ProtoMgr)</h2>
+<h2 id="step-2-create-a-prototype-designer-protomgr">Step 2: Create a Prototype (Designer, ProtoMgr)<a class="headerlink" href="#step-2-create-a-prototype-designer-protomgr" title="Permanent link">&para;</a></h2>
 <p>To validate the design we produce an in-house prototype when possible.  This is a somewhat lightweight process and is not a tagged GitHub release, because there may be many of them.  </p>
 <ul>
 <li>If no prior Github repository exists for the project in question, file a JIRA Service Request with DevOps and request one with the appropriate project name.</li>
@@ -324,7 +323,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="step-3-test-the-prototype-hwte-designer">Step 3: Test the Prototype (HWTE, Designer)</h2>
+<h2 id="step-3-test-the-prototype-hwte-designer">Step 3: Test the Prototype (HWTE, Designer)<a class="headerlink" href="#step-3-test-the-prototype-hwte-designer" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The HWTE and design engineer create a complete template object (built to the design intent) to test against.</li>
 <li>The HWTE and design engineer run all of the relevant tests set out in the design process to validate that the prototype is correct. Refer to the Basic Hardware Testing Criteria google doc. </li>
@@ -332,7 +331,7 @@
 <li>If the HWTE approves the device for production then proceed to step 4, otherwise go back to step 1.</li>
 </ul>
 <p>Hand off the document package to the Designer.</p>
-<h2 id="step-4-create-release-candidate-rc-artifacts-designer">Step 4: Create Release Candidate (RC) Artifacts (Designer)</h2>
+<h2 id="step-4-create-release-candidate-rc-artifacts-designer">Step 4: Create Release Candidate (RC) Artifacts (Designer)<a class="headerlink" href="#step-4-create-release-candidate-rc-artifacts-designer" title="Permanent link">&para;</a></h2>
 <p>For a mechanical/housing manufacturing run, the release package contains the following documents, as appropriate to the design and type of manufacturing process (in other words, not all designs will require each of the file types below).  The filenames derive from the base product ID, e.g. POSCON.XXXXXX  </p>
 <p>CNC Manufacturing typical file sets</p>
 <table>
@@ -503,10 +502,10 @@
 <li>The longer dimensions should be placed outside all intermediate dimensions so that dimension lines will not cross extension lines. </li>
 <li>Do not force workers to assume that a feature is centered. Provide a location dimension.</li>
 <li>Non-toleranced detail dimensions may be chained if necessary, or avoid a complete chain of detail dimensions by omitting one and providing an overall dimension. </li>
-<li>Dimension lines should be spaced uniformly (approximately 3/8” apart).</li>
+<li>Dimension lines should be spaced uniformly (approximately &#8540;” apart).</li>
 </ul>
 <p>For a complete ANSI checklist, refer to ANSI Dimensioning Guidelines v1.1.</p>
-<h2 id="step-5-commit-the-release-candidate-package-to-github">Step 5: Commit the Release Candidate Package to GitHub</h2>
+<h2 id="step-5-commit-the-release-candidate-package-to-github">Step 5: Commit the Release Candidate Package to GitHub<a class="headerlink" href="#step-5-commit-the-release-candidate-package-to-github" title="Permanent link">&para;</a></h2>
 <p>When working with RC files, best practices dictate that all files being created, edited and committed to GitHub be managed from the same place to keep the workflow consistent.</p>
 <ul>
 <li>Commit the above files to GitHub.</li>
@@ -519,14 +518,14 @@
 <li>Copy commit messages between the RC release and the final production release into the ECO.</li>
 <li>The RC tag should increment (RC1, RC2) until the object is approved for production and released with the appropriate production version tag (E.g. V1.1).</li>
 </ul>
-<h2 id="step-6-release-checklist">Step 6: Release Checklist</h2>
+<h2 id="step-6-release-checklist">Step 6: Release Checklist<a class="headerlink" href="#step-6-release-checklist" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Download and print all files in the RC package from GitHub. </li>
 <li>All files in the RC package must be checked against a printed Checklist: Mechanical Production Review v1.4. The document should be printed and reviewed with a pen.</li>
 <li>Any drawings to be released to CMs must be checked by the HTWE or in-house ANSI domain expert.</li>
 <li>If changes need to be made, go back to Step 4.</li>
 </ul>
-<h2 id="step-7-build-rc-articles-prodmgr-hwte">Step 7: Build RC Articles (ProdMgr &amp; HWTE)</h2>
+<h2 id="step-7-build-rc-articles-prodmgr-hwte">Step 7: Build RC Articles (ProdMgr &amp; HWTE)<a class="headerlink" href="#step-7-build-rc-articles-prodmgr-hwte" title="Permanent link">&para;</a></h2>
 <p>Once a part releases as RC, we send the release package to the CMS for a request to quote for manufacture.   RC articles are not needed if the same outside CM has manufactured the prototype, and the same design has been approved for production with no changes. If either the design or manufacturing process changes from the approved prototype, RC articles are needed. </p>
 <ul>
 <li>Email the ProdMgr to request an RC build along with requested turnaround time and quantity. </li>
@@ -543,7 +542,7 @@
 <li>When the device comes back from the CMS, it gets assembled by the prototype shop (if not already assembled by the outside CMS).</li>
 <li>ProdMgr checks whether CMS has made any modifications to the design. If so, the design needs to be revised and re-versioned. </li>
 </ul>
-<h2 id="step-8-test-and-validate-rc-articles-hwte-designer">Step 8: Test and Validate RC Articles (HWTE &amp; Designer)</h2>
+<h2 id="step-8-test-and-validate-rc-articles-hwte-designer">Step 8: Test and Validate RC Articles (HWTE &amp; Designer)<a class="headerlink" href="#step-8-test-and-validate-rc-articles-hwte-designer" title="Permanent link">&para;</a></h2>
 <p>RC articles must be approved by the HWTE / designer in order to release for production. </p>
 <p>Hand off the document package to the Hardware Test Engineer.</p>
 <ul>
@@ -559,12 +558,14 @@ Step 9: Release Tag (Designer)</p>
 </ul>
 <p>Github automatically notifies ProdMgr of the release. </p>
 <p>Hand off the document package to the Production Manager.</p>
-<h2 id="step-10-release-announcement-prodmgr">Step 10: Release Announcement (ProdMgr)</h2>
-<pre><code>Issue a release announcement
+<h2 id="step-10-release-announcement-prodmgr">Step 10: Release Announcement (ProdMgr)<a class="headerlink" href="#step-10-release-announcement-prodmgr" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>Issue a release announcement
 Update the Current and Planned Hardware Releases and Products in need of release documents.
-</code></pre>
+</pre></div>
+
+
 <p>The item is then cleared for ongoing production.</p>
-<h2 id="step-11-post-release-review-prodmgr">Step 11: Post Release Review (ProdMgr)</h2>
+<h2 id="step-11-post-release-review-prodmgr">Step 11: Post Release Review (ProdMgr)<a class="headerlink" href="#step-11-post-release-review-prodmgr" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Review the release process with the Engineer</li>
 <li>Change the release process document as needed</li>
@@ -578,8 +579,18 @@ Update the Current and Planned Hardware Releases and Products in need of release
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <script src="../../js/base.js"></script>
+        <script src="../.././js/extra.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -602,7 +613,47 @@ Update the Current and Planned Hardware Releases and Products in need of release
             </div>
         </div>
     </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
+
 
     </body>
 </html>
