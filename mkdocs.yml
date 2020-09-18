@@ -1,5 +1,9 @@
 site_name: ZeroDiff
-pages:
+site_description: ZeroDiff Documentation
+site_author: Jeff Williams
+site_url: https://zerodiff.org/
+
+nav:
 - Home: index.md
 - Beginners:
     - Overivew: beginners/overview.md
@@ -43,35 +47,50 @@ pages:
     - Contribute: about/contribute.md
     - License: about/license.md
 theme:
-  name: mkdocs
-  theme_dir: themes/material
+  name: material
   custom_dir: theme-overrides
-  favicon: 'images/favicon/favicon.ico'
-  logo: 'images/favicon/apple-icon-144x144.png'
-  feature:
-    tabs: true
-    
-extra:
-  feature:
-    tabs: true
-  logo: 'images/profile.png'
+  favicon: icons/favicon.ico
+  logo: icons/zerodiff.svg
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    scheme: preference
+    primary: indigo
+    accent: indigo
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    text: Roboto
+    code: Roboto Mono
+  language: en
+  features:
+    tabs: true
+    instant: true
+
+plugins:
+  - search:
+      prebuild_index: true
+  - redirects:
+      redirect_maps:
+  - minify:
+      minify_html: true
+
+extra:
   social:
-    - type: 'github'
-      link: 'https://github.com/0x6a77'
-    - type: 'envelope-square'
-      link: 'http://eepurl.com/dl_CsD'
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/zero-diff
+    - icon: fontawesome/solid/envelope-square
+      link: http://eepurl.com/dl_CsD
 
 markdown_extensions:
   - tables
-  - admonition
-  - codehilite(guess_lang=false)
-  - toc(permalink=true)
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -79,31 +98,53 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
   - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
 
-repo_url: https://github.com/0x6a77/zerodiff/
-copyright: <a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2016 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License
+repo_url: https://github.com/zero-diff/zerodiff/
+copyright: <a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2020 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License
 
 extra_css:
   - ./js/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.4/mermaid.css
 
 extra_javascript:
-  - './js/extra.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js'
+  - https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.js
+  - https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.5/MathJax.js?config=TeX-MML-AM_CHTML
+  - https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.13.0/flowchart.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js
+#  - https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-snap-min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.4/mermaid.min.js
+  - js/sequence-diagram-rafael-min.js
+#  - js/sequence-diagram-snap-min.js
+  - js/extra.js
 
 google_analytics:
-  - 'UA-78164923-1'
-  - 'auto'
+  - UA-78164923-1
+  - auto
