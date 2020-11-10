@@ -37,15 +37,13 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700%7CMontserrat+Mono&display=fallback">
+        <style>body,input{font-family:"Montserrat",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Montserrat Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
     
       <link rel="stylesheet" href="/./js/extra.css">
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.4/mermaid.css">
     
     
       
@@ -153,93 +151,6 @@
         
       
       
-        
-          
-
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  <li class="md-tabs__item">
-    
-      <a href="/." class="md-tabs__link md-tabs__link--active">
-        Home
-      </a>
-    
-  </li>
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="/beginners/overview/" class="md-tabs__link">
-          Beginners
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="/design/empathy/" class="md-tabs__link">
-          Design
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="/hardware/top_level/" class="md-tabs__link">
-          Hardware
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="/test/monkey/" class="md-tabs__link">
-          Test
-        </a>
-      
-    </li>
-  
-
-      
-        
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="/about/why/" class="md-tabs__link">
-          About
-        </a>
-      
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
         
       
       <main class="md-main" data-md-component="main">
@@ -1014,18 +925,20 @@
       <script>
         app = initialize({
           base: "/",
-          features: {"tabs": true, "instant": true},
+          features: [{"tabs": true}, "navigation.instant"],
           search: Object.assign({
             worker: "/assets/javascripts/worker/search.01088dc6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
         <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js"></script>
       
@@ -1033,11 +946,13 @@
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.4/mermaid.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.2/mermaid.min.js"></script>
       
         <script src="/js/sequence-diagram-rafael-min.js"></script>
       
         <script src="/js/extra.js"></script>
+      
+        <script src="/js/mathjax.config.js"></script>
       
     
   </body>
