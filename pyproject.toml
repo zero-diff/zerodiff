@@ -1,0 +1,30 @@
+[project]
+name = "zerodiff"
+version = "0.1.0"
+description = "ZeroDiff Documentation"
+requires-python = ">=3.11"  # Increased to ensure PEP 706 support for pip security
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.0",
+    "mkdocs-redirects>=1.2.2",
+    "mkdocs-minify-plugin>=0.8.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.5.0",
+    "mkdocs-rss-plugin>=1.17.0",  # For RSS feed generation (required by mkdocs.yml)
+    "pymdown-extensions>=10.17.1",
+    # Security-constrained transitive dependencies
+    "fonttools>=4.60.2",      # CVE-2025-66034: RCE via path traversal
+    "setuptools>=78.1.1",     # PYSEC-2025-49, CVE-2024-6345: Path traversal to RCE
+    "urllib3>=2.6.0",         # CVE-2025-66418, CVE-2025-66471: DoS via decompression
+    "werkzeug>=3.1.4",        # CVE-2025-66221: Path handling DoS
+    "pypdf>=6.4.0",           # Multiple CVEs: DoS via resource exhaustion
+]
+
+[project.optional-dependencies]
+dev = [
+    "mkdocs-material[imaging]",  # For social cards
+    "pip-audit>=2.9.0",          # For security auditing
+]
+
+[build-system]
+requires = ["hatchling", "setuptools>=78.1.1"]
+build-backend = "hatchling.build"

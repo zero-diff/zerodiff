@@ -1,3 +1,18 @@
-site/
 /.DS_Store
 /.project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+
+# MkDocs
+site/
+
+# uv
+.uv/
+uv.lock

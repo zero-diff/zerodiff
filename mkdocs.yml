@@ -2,149 +2,194 @@ site_name: ZeroDiff
 site_description: ZeroDiff Documentation
 site_author: Jeff Williams
 site_url: https://zerodiff.org/
-
+watch:
+  - docs
 nav:
-- Home: index.md
-- Beginners:
-    - Overivew: beginners/overview.md
-    - Kaizen/CPI: beginners/kaizen.md
-    - Design: beginners/design.md
-    - User Editable Doc Repo: beginners/user_docs.md
-    - All Designs To Github: beginners/doc_control.md
-    - EE Checklist: hardware/pcb_checklist.md
-    - Firmware Checklist: firmware/checklist.md
-    - CI Server: beginners/tdd_ci.md
-- Design:
-    - User Empathy: design/empathy.md
-    - First Principles: design/essential_user_task.md
-    - Make Fewer Things: design/fewer.md
-    - Teach, Don't Lead: design/teach.md
-    - What's Testable?: design/testable.md
-    - Ethnographic Study: design/ethno_study.md
-    - Design Sprint: design/sprint.md
-- Hardware:
-    - Top-Level Object Dev: hardware/top_level.md
-    - PCB/A:
-        - PCB/A Dev: hardware/pcba.md
-        - Release CheckList: hardware/pcb_checklist.md
-    - MechE: 
-        - MechE Dev: hardware/mech_eng.md
-        - Release CheckList: hardware/meche_checklist.md
-        - Test Criteria: hardware/mech_eng_test.md
-        - Process Improvement: hardware/process_improvement.md
-    - Firmware:
-        - Firmware Dev: firmware/dev.md
-        - Release Checklist: firmware/checklist.md
-    - Vendors:
-        - Trust as a Tool: vendor/trust.md
-        - Assembly, Fab Notes: vendor/fab.md
-        - ECOs - Yes, No, Maybe: vendor/eco.md
-- Test:
-    - Automated Monkey Tests: test/monkey.md
-- Glossary: glossary.md
-- About:
-    - Why ZeroDiff?: about/why.md
-    - Contribute: about/contribute.md
-    - License: about/license.md
+  - Home: index.md
+  - Blog:
+    - blog/index.md
+  - Software:
+    - software/index.md
+  - Hardware:
+    - hardware/index.md
+    - Beginners:
+        - Overview: hardware/beginners/overview.md
+        - Kaizen/CPI: hardware/beginners/kaizen.md
+        - Design: hardware/beginners/design.md
+        - User Editable Doc Repo: hardware/beginners/user_docs.md
+        - All Designs To Github: hardware/beginners/doc_control.md
+        - EE Checklist: hardware/hardware/pcb_checklist.md
+        - Firmware Checklist: hardware/firmware/checklist.md
+        - CI Server: hardware/beginners/tdd_ci.md
+    - Design:
+        - User Empathy: hardware/design/empathy.md
+        - First Principles: hardware/design/essential_user_task.md
+        - Make Fewer Things: hardware/design/fewer.md
+        - Teach, Don't Lead: hardware/design/teach.md
+        - What's Testable?: hardware/design/testable.md
+        - Ethnographic Study: hardware/design/ethno_study.md
+        - Design Sprint: hardware/design/sprint.md
+    - Hardware:
+        - Top-Level Object Dev: hardware/hardware/top_level.md
+        - PCB/A:
+            - PCB/A Dev: hardware/hardware/pcba.md
+            - Release CheckList: hardware/hardware/pcb_checklist.md
+        - MechE:
+            - MechE Dev: hardware/hardware/mech_eng.md
+            - Release CheckList: hardware/hardware/meche_checklist.md
+            - Test Criteria: hardware/hardware/mech_eng_test.md
+            - Process Improvement: hardware/hardware/process_improvement.md
+        - Firmware:
+            - Firmware Dev: hardware/firmware/dev.md
+            - Release Checklist: hardware/firmware/checklist.md
+        - Vendors:
+            - Trust as a Tool: hardware/vendor/trust.md
+            - Assembly, Fab Notes: hardware/vendor/fab.md
+            - ECOs - Yes, No, Maybe: hardware/vendor/eco.md
+    - Test:
+        - Automated Monkey Tests: hardware/test/monkey.md
+  - Glossary: glossary.md
+  - About:
+      - Overview: about/overview.md
+      - Why ZeroDiff?: about/why.md
+      - Contribute: about/contribute.md
+      - License: about/license.md
+
 theme:
   name: material
   custom_dir: theme-overrides
   favicon: icons/favicon.ico
   logo: icons/zerodiff.svg
   palette:
-    scheme: preference
-    primary: indigo
-    accent: indigo
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
   language: en
   features:
-    tabs: true
-    instant: true
+    - content.code.annotate
+    - content.code.copy
+    - content.footnote.tooltips
+    - content.tooltips
+#    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+#    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+#    - toc.integrate
 
 plugins:
+  - blog:
+      enabled: true
+      post_date_format: medium
+      blog_toc: true
+      archive: true
+      archive_date_format: MMMM yyyy
+#      post_count: 1
   - search:
-      prebuild_index: true
+      lang: en
   - redirects:
-      redirect_maps:
+      redirect_maps: {}
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      enabled: false
+      enable_creation_date: false
+      type: date
+  - rss:
+      match_path: "blog/posts/.*"
+      date_from_meta:
+        as_creation: date
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/zero-diff
-    - icon: fontawesome/solid/envelope-square
-      link: http://eepurl.com/dl_CsD
+      name: ZeroDiff on GitHub
+    - icon: material/rss
+      link: /feed_rss_created.xml
+      name: Zerodiff RSS feed
+  analytics:
+    provider: google
+    property: G-6Q7FXB2D6X
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
   - tables
-  - markdown.extensions.admonition
-  - markdown.extensions.attr_list
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
-      permalink: true
-  - codehilite:
-      guess_lang: false
   - toc:
       permalink: true
-  - pymdownx.arithmatex
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.superfences:
-      preserve_tabs: true
       custom_fences:
-        - name: flow
-          class: uml-flowchart
-          format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: sequence
-          class: uml-sequence-diagram
-          format: !!python/name:pymdownx.superfences.fence_code_format
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
 
 repo_url: https://github.com/zero-diff/zerodiff/
-copyright: <a href="https://tinyletter.com/zerodiff/archive">ZeroDiff TinyLetter Blog</a><br>Copyright &copy; 2020 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License
+repo_name: zero-diff/zerodiff
+
+copyright: >
+  <a href="https://zerodiff.org">ZeroDiff Blog</a><br>
+  Copyright &copy; 2020-2026 <a href="https://github.com/0x6a77">Jeff Williams</a> under BSD-3 License
 
 extra_css:
-  - ./js/extra.css
-  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.4/mermaid.css
+  - stylesheets/extra.css
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.js
-  - https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.5/MathJax.js?config=TeX-MML-AM_CHTML
-  - https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.13.0/flowchart.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js
-#  - https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-snap-min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.4/mermaid.min.js
-  - js/sequence-diagram-rafael-min.js
-#  - js/sequence-diagram-snap-min.js
-  - js/extra.js
-
-google_analytics:
-  - UA-78164923-1
-  - auto
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascript/extra.js

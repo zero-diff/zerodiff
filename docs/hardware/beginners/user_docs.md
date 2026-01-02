@@ -16,4 +16,4 @@ Github is the right tool for shared, versioned work across the entire org. Even 
 
 Over in the "Contribute" section, there's some docs on how to use and modify the mkdocs repo.
 
-[Mkdocs instructions](../about/contribute/)
+[Mkdocs instructions](../../about/contribute.md/)

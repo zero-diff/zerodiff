@@ -1,5 +1,5 @@
 ## BSD License
-Copyright (c) 2016, Jeff Williams
+Copyright (c) 2026, Jeff Williams
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
