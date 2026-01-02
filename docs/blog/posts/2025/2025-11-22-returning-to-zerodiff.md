@@ -15,6 +15,6 @@ Eventually I want to return to robots and hardware, but because my life these da
 
 <!-- more -->
 
-The fundamental driver to my thinking is a concept I call "the inventory cost of a git commit." I will write more deeply about this in the future, but the basic idea is the same as hardware: git commits are like inventory, until you ship them, they generate no economic value, so the carrying cost is the same as it is for hardware. Lowering inventory carrying costs improves the operational cash cycle which makes it possible to get more done with the same capital. This idea applies to BigCo as much as any startup, and to software as much as hardware — it's universal concept. I want to show that ZeroDiff is a way to make hardware and software businesses leaner and meaner.
+The fundamental driver to my thinking is a concept I call "the inventory cost of a git commit." I will write more deeply about this in the future, but the basic idea is the same as hardware: git commits are like inventory, until you ship them, they generate no economic value, so the carrying cost is the same as it is for hardware. Lowering inventory carrying costs improves the operational cash cycle which makes it possible to get more done with the same capital. This idea applies to BigCo as much as any startup, and to software as much as hardware — it's a universal concept. I want to show that ZeroDiff is a way to make hardware and software businesses leaner and meaner.
 
 Stay tuned.
